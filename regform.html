@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  
+ 
+  
+}
+
+
+* {
+  box-sizing: border-box;
+  
+}
+
+.container {
+  padding: 16px;
+  background-color: white;
+  width: 500px;
+  
+  border: 2px solid black;
+  margin-left: 500px;
+  
+ 
+  
+}
+
+
+input[type=text], input[type=contact] ,input[type=email] ,input[type=password] {
+  width: 100%;
+  padding: 10px;
+
+  margin: 5px 0 20px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 5px;
+  margin-top: 2px;
+}
+
+
+.registerbtn {
+  background-color: #06BBCC;
+  color: white;
+  padding: 10px 10px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 20%;
+  opacity: 0.9;
+
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+
+a {
+  color: dodgerblue;
+}
+
+
+.signin {
+  background-color: #f1f1f1;
+  padding: 0%;
+  text-align: center;
+}
+@media screen and (max-width: 768px){
+    .container {
+  padding: 16px;
+  background-color: white;
+  width: 412px;
+  border: 2px solid black;
+  margin-left: 30px;
+    }
+
+  .signin {
+  background-color: #f1f1f1;
+  padding: 0%;
+  text-align: center;
+}
+  
+}
+
+
+
+</style>
+</head>
+<body>
+
+<form action="/action_page.php">
+
+  <div class="container">
+   
+    <p>Please fill in this form to create an account.</p>
+    <hr>
+
+    
+
+		
+        <label for="name"><b>Name</b></label>
+        <input type="text" placeholder="Enter Name" name="email" required>
+
+        <label for="contact"><b>Contact</b></label>
+        <input type="text" placeholder="Enter contact number" name="email" required>
+
+    <label for="email"><b>Email</b></label>
+
+    <input type="text" placeholder="Enter Email" name="email" id="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+
+    <label for="psw-repeat"><b>Confirm password </b></label>
+    <input type="password" placeholder="Confirm Password" name="psw-repeat" id="psw-repeat" required>
+    <hr>
+   
+
+    <button type="submit" class="registerbtn">Register</button>
+  </div>
+  
+  <div class="container signin">
+    <p>Already have an account? <a href="#">Sign in</a>.</p>
+  </div>
+</form>
+
+</body>
+</html>
